@@ -1,0 +1,529 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap');
+
+/* General CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.section-content {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: gray;
+}
+
+.section-headline {
+    font-size: 26px;
+}
+
+.section-btn {
+    padding: 10px 24px;
+    font-size: 20px;
+    background-color: #002147;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.section-btn:hover {
+    background-color: #23527c;
+}
+
+/* Header */
+.header {
+    background-image: url("image/bg/hero-img.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.navbar {
+    background: linear-gradient(0deg,rgba(0,0,0,.40),#23527c);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+    z-index: 999;
+}
+
+.fa-bars {
+    display: none !important;
+}
+
+.nav-item {
+    margin-inline: 10px;
+}
+
+.navbar-bottom {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #002147;
+    transition: .2s ease-in-out;
+}
+
+.navmenu-top .nav-link::after {
+    top: -5px;
+}
+
+.navbar-bottom .nav-link::after {
+    bottom: -5px;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-heading {
+    font-size: 100px;
+}
+
+.bottom {
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    background-color: #002147;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Faculty Section */
+.faculty.section {
+    background-color: #f4f4f4;
+}
+
+.faculty.section .d-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.article-content {
+    position: relative;
+
+}
+
+.article-content-inside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-align: start;
+    padding: 0 0 30px 30px;
+}
+
+.img-link img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0,.5);
+}
+
+.img-link {
+    height: 450px;
+}
+
+.article {
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0,.5);
+    overflow: hidden;
+}
+
+.article-img img {
+    width: 100%;
+    transition: .2s ease-in-out;
+}
+
+.article-img:hover img{
+    scale: 1.1;
+}
+
+.article-body p {
+    color: #002147;
+}
+
+.article-body a {
+    color: black;
+    transition: .2s ease-in-out;
+}
+
+.article-body a:hover {
+    color: #002147;
+}
+
+.article-body {
+    padding: 20px;
+    text-align: start;
+}
+
+.faculty.section .section-btn {
+    margin-top: 35px;
+}
+
+/* Academics Section */
+.academics .d-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card {
+    text-align: start;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-body a {
+    color: #002147;
+}
+
+.card-body a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.card-body h3 {
+    margin-top: 20px;
+}
+
+.card-body h3, p {
+    margin-bottom: 20px;
+}
+
+.faculty-nav {
+    margin-top: 60px;
+}
+
+.faculty-nav .navmenu {
+    margin-top: 35px;
+}
+
+.faculty-nav a {
+    color: #002147;
+    font-size: 20px;
+}
+
+.faculty-nav .nav-link::after {
+    bottom: -5px;
+}
+
+.nav-heading {
+    font-size: 26px;
+}
+
+.academics button {
+    margin-top: 35px;
+}
+
+/* Review Section */
+.bg {
+    background-image: url(image/bg/section.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.review {
+    text-align: center;
+    width: 60%;
+}
+
+.potrait-img img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.review-content p{
+    font-size: 28px;
+    color: white;
+}
+
+/* Ranking Section */
+.vl {
+    width: 2px;
+    height: 30px;
+    background-color: black;
+}
+
+.f-item h3{
+    font-size: 30px;
+}
+
+.f-items p {
+    font-size: 24px;
+}
+
+.rank .d-flex {
+    margin-block: 35px;
+}
+
+.rank button {
+    margin-top: 35px;
+}
+
+.bg-2 {
+    background-image: url(image/bg/uni.jpg);
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+}
+
+/* Footer */
+.footer .icons {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.footer .icons i {
+    font-size: 34px;
+    margin-inline: 10px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.footer .fnav-heading {
+    color: #002147;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer .nav-link {
+    color: black;
+}
+
+.footer .nav-link::after {
+    bottom: 0;
+}
+
+.footer-nav {
+    padding: 40px;
+}
+
+.fnav-menu {
+    padding: 40px;
+}
+
+.footer .nav-item {
+    margin: 0;
+    margin-block: 20px;
+}
+
+.footer-bottom {
+    padding: 40px;
+    background-color: #002147;
+}
+
+.footer-bottom p {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.fa-square-facebook:hover {
+    color: #316FF6;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+}
+
+.fa-linkedin-in:hover {
+    color: #0a66c2;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.fa-apple:hover {
+    color: #555555;
+}
+
+.fa-magnifying-glass {
+    margin-right: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 990px) {
+.fa-bars {
+        display: block !important;
+        font-size: 22px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navmenu-top {
+        display: none;
+    }
+
+    .navbar-bottom {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .item-1 {
+        grid-column: 1 / 3;
+    }
+    
+    .item-2 {
+        grid-column: 3 / 5;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .hero-heading {
+        font-size: 35px;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+
+    .section-content {
+        font-size: 22px;
+    }
+
+    .section-btn {
+        font-size: 14px;
+    }
+
+    .faculty .d-grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .academics .d-grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .academics .d-flex {
+        flex-direction: column;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .potrait-img img {
+        width: 100px;
+    }
+
+    .review-content p {
+        font-size: 20px;
+    }
+
+    .rank .d-flex {
+        flex-direction: column;
+    }
+
+    .fnav-menu {
+        padding: 0;
+    }
+
+    .footer-nav.d-flex {
+        flex-direction: column;
+    }
+
+    .footer .icons {
+        justify-content: center;
+    }
+
+    .footer .icons i {
+        font-size: 24px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
+}
